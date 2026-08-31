@@ -14,12 +14,12 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; overflow-x: hidden; background: var(--ivory); color: var(--ink); font-family: "Plus Jakarta Sans", sans-serif; }
+body { margin: 0; overflow-x: hidden; background: var(--ivory); color: var(--ink); font-family: "Inter", sans-serif; }
 a { color: inherit; text-decoration: none; }
 
 .nav { position: absolute; z-index: 10; top: 0; width: 100%; height: 92px; padding: 0 clamp(24px, 5vw, 76px); display: flex; align-items: center; justify-content: space-between; color: #fff; border-bottom: 1px solid rgba(255,255,255,.25); }
 .brand { display: flex; align-items: center; gap: 13px; font-size: 13px; font-weight: 600; letter-spacing: .2em; }
-.brand-mark { width: 39px; height: 39px; display: grid; place-items: center; border: 1px solid currentColor; border-radius: 50%; font: 600 23px/1 "Bodoni Moda", serif; }
+.brand-mark { width: 39px; height: 39px; display: grid; place-items: center; border: 1px solid currentColor; border-radius: 50%; font: 600 23px/1 "Playfair Display", serif; }
 .brand small { display: block; margin-top: 3px; font-size: 7px; letter-spacing: .28em; opacity: .8; }
 .nav nav { display: flex; gap: 38px; font-size: 12px; font-weight: 500; }
 .nav nav a { position: relative; padding: 8px 0; }
@@ -33,7 +33,7 @@ a { color: inherit; text-decoration: none; }
 .eyebrow, .kicker { font-size: 10px; font-weight: 600; letter-spacing: .22em; text-transform: uppercase; }
 .eyebrow { display: flex; align-items: center; gap: 12px; color: #f4d9a7; }
 .eyebrow span { width: 34px; height: 1px; background: currentColor; }
-.hero h1, .section-heading h2, .promise h2, .contact h2 { margin: 24px 0; font-family: "Bodoni Moda", serif; font-weight: 500; line-height: .93; letter-spacing: -.035em; }
+.hero h1, .section-heading h2, .promise h2, .contact h2 { margin: 24px 0; font-family: "Playfair Display", serif; font-weight: 500; line-height: .93; letter-spacing: -.035em; }
 .hero h1 { max-width: 780px; font-size: clamp(64px, 7.2vw, 110px); }
 .hero h1 em, h2 em { color: #efbf72; font-weight: 500; }
 .hero-copy { max-width: 520px; margin: 0; color: rgba(255,255,255,.86); font-size: 14px; line-height: 1.8; }
@@ -55,8 +55,8 @@ a { color: inherit; text-decoration: none; }
 .section-number { padding-top: 17px; color: var(--gold); font-size: 8px; font-weight: 600; letter-spacing: .2em; }
 .section-number span { display: inline-block; width: 30px; height: 1px; margin: 0 10px; background: currentColor; vertical-align: middle; }
 .intro-copy { max-width: 920px; }
-.script { margin: 0 0 14px; color: var(--terracotta); font: italic 500 21px/1 "Bodoni Moda", serif; }
-.intro h2 { max-width: 850px; margin: 0 0 26px; font: 500 clamp(42px,4.3vw,64px)/1.06 "Bodoni Moda", serif; letter-spacing: -.025em; }
+.script { margin: 0 0 14px; color: var(--terracotta); font: italic 500 21px/1 "Playfair Display", serif; }
+.intro h2 { max-width: 850px; margin: 0 0 26px; font: 500 clamp(42px,4.3vw,64px)/1.06 "Playfair Display", serif; letter-spacing: -.025em; }
 .intro-copy > p:last-child { max-width: 590px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.85; }
 
 .services { padding: clamp(90px,9vw,140px) clamp(24px,7vw,110px); background: linear-gradient(135deg, var(--cream), #fffaf2); }
@@ -76,7 +76,7 @@ a { color: inherit; text-decoration: none; }
 .view-label { position: absolute; z-index: 2; right: 18px; bottom: 18px; padding: 10px 12px; background: rgba(255,253,248,.94); color: var(--ink); font-size: 7px; font-weight: 600; letter-spacing: .15em; opacity: 0; transform: translateY(7px); transition: .3s; }
 .service-card:hover .view-label { opacity: 1; transform: none; }
 .card-copy { min-height: 205px; padding: 28px 27px 30px; border-top: 3px solid var(--gold); }
-.card-copy h3 { margin: 0 0 12px; font: 600 30px/1.1 "Bodoni Moda", serif; }
+.card-copy h3 { margin: 0 0 12px; font: 600 30px/1.1 "Playfair Display", serif; }
 .card-copy p { min-height: 48px; margin: 0 0 20px; color: var(--muted); font-size: 12px; line-height: 1.7; }
 .card-copy > span { color: var(--terracotta); font-size: 7px; font-weight: 600; letter-spacing: .17em; }
 
@@ -87,17 +87,17 @@ a { color: inherit; text-decoration: none; }
 .promise-list div { padding: 31px 20px; border-right: 1px solid var(--line); }
 .promise-list div:last-child { border: 0; }
 .promise-list strong { display: block; margin-bottom: 10px; color: var(--gold); font-size: 8px; letter-spacing: .14em; }
-.promise-list span { font: 600 20px/1.2 "Bodoni Moda", serif; }
+.promise-list span { font: 600 20px/1.2 "Playfair Display", serif; }
 
 .contact { min-height: 610px; display: grid; grid-template-columns: 1.15fr .85fr; background: var(--cream); color: var(--ink); }
 .contact-copy { padding: clamp(80px,8vw,120px) clamp(24px,8vw,125px); background: linear-gradient(145deg,#fffaf1,#f5ead9); }
 .contact h2 { margin: 22px 0 26px; font-size: clamp(62px,6.5vw,94px); }
 .contact h2 em { color: var(--terracotta); }
 .contact-copy > p:not(.kicker) { max-width: 480px; color: var(--muted); font-size: 13px; line-height: 1.8; }
-.phone { display: inline-block; margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--terracotta); font: 600 25px/1.2 "Bodoni Moda", serif; }
+.phone { display: inline-block; margin-top: 30px; padding-bottom: 7px; border-bottom: 1px solid var(--terracotta); font: 600 25px/1.2 "Playfair Display", serif; }
 .contact-card { position: relative; overflow: hidden; padding: clamp(80px,8vw,120px) clamp(35px,5vw,78px); background: linear-gradient(145deg,#d87a57,#c66343); color: #fff; }
 .contact-card > p { margin: 0; font-size: 8px; font-weight: 600; letter-spacing: .2em; }
-.contact-card h3 { margin: 28px 0 48px; font: 600 clamp(30px,3vw,43px)/1.15 "Bodoni Moda", serif; }
+.contact-card h3 { margin: 28px 0 48px; font: 600 clamp(30px,3vw,43px)/1.15 "Playfair Display", serif; }
 .button-light { background: #fff; color: var(--ink); }
 .petals { position: absolute; right: -42px; bottom: -78px; font-size: 250px; opacity: .08; }
 
@@ -148,15 +148,22 @@ footer { min-height: 126px; padding: 34px clamp(24px,5vw,76px); display: flex; a
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
-/* Reference-led editorial typography */
-.hero h1,.section-heading h2,.promise h2,.contact h2,.intro h2{font-family:"Bodoni Moda",serif;font-weight:400;letter-spacing:-.045em}
-.hero h1{max-width:720px;font-size:clamp(60px,6.5vw,98px);line-height:.95}
-.hero h1 em,.section-heading h2 em,.promise h2 em,.contact h2 em{font-weight:400;font-style:italic}
-.intro h2{font-size:clamp(40px,4vw,58px);line-height:1.12}
-.section-heading h2{font-size:clamp(49px,5.3vw,74px);line-height:.98}
-.eyebrow,.kicker,.section-number,.card-copy>span{font-family:"Plus Jakarta Sans",sans-serif;letter-spacing:.24em}
-.service-grid{grid-template-columns:1.16fr .92fr .92fr;align-items:start}
-.service-card:not(.large) .card-visual{height:440px}
-.card-copy h3{font-family:"Bodoni Moda",serif;font-weight:400;font-size:28px;letter-spacing:-.025em}
-.promise h2{font-size:clamp(55px,6vw,84px)}
-@media(max-width:850px){.hero h1{font-size:clamp(51px,15vw,68px)}.section-heading h2{font-size:49px}.service-grid{grid-template-columns:1fr}.service-card:not(.large) .card-visual,.card-visual,.large .card-visual{height:min(118vw,500px)}}
+/* Reference-led clear editorial UI */
+body{font-family:"Inter",Arial,sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.hero h1,.section-heading h2,.promise h2,.contact h2,.intro h2{font-family:"Playfair Display",Georgia,serif;font-weight:500;letter-spacing:-.035em}
+.hero h1{max-width:700px;font-size:clamp(58px,6.2vw,94px);line-height:.98;text-shadow:0 2px 22px rgba(0,0,0,.12)}
+.hero h1 em,.section-heading h2 em,.promise h2 em,.contact h2 em{font-weight:500;font-style:italic}
+.hero-copy{max-width:550px;font-size:15px;line-height:1.75}
+.eyebrow,.kicker,.section-number,.card-copy>span{font-family:"Inter",Arial,sans-serif;font-weight:600;letter-spacing:.2em}
+.intro h2{max-width:900px;font-size:clamp(39px,4vw,58px);line-height:1.15}
+.intro-copy>p:last-child,.section-heading>p,.card-copy p,.contact-copy>p:not(.kicker){font-size:14px;line-height:1.8}
+.section-heading h2{font-size:clamp(48px,5.1vw,72px);line-height:1.03}
+.service-grid{grid-template-columns:1.15fr .9fr .9fr;align-items:start;gap:22px}
+.large .card-visual{height:510px}
+.service-card:not(.large) .card-visual{height:430px}
+.card-copy{min-height:210px}
+.card-copy h3{font-family:"Playfair Display",Georgia,serif;font-weight:600;font-size:29px;line-height:1.2;letter-spacing:-.02em}
+.promise h2{font-size:clamp(54px,5.8vw,82px);line-height:1.02}
+.promise-list span{font-family:"Playfair Display",Georgia,serif;font-weight:600}
+.phone,.contact-card h3{font-family:"Playfair Display",Georgia,serif;font-weight:600}
+@media(max-width:850px){body{font-size:14px}.hero h1{font-size:clamp(48px,14vw,65px);line-height:1}.hero-copy{font-size:14px}.intro h2{font-size:38px;line-height:1.16}.section-heading h2{font-size:47px;line-height:1.05}.service-grid{grid-template-columns:1fr;gap:24px}.large .card-visual,.service-card:not(.large) .card-visual,.card-visual{height:420px;min-height:0}.card-copy{min-height:0}.promise h2{font-size:52px}.contact h2{font-size:56px}}
