@@ -8,8 +8,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4" />
-</head>
+  <link rel="stylesheet" href="styles.css?v=6" />
+  <style>
+    @media (max-width: 850px) {
+      #services .service-grid { display: grid !important; grid-template-columns: 1fr !important; }
+      #services .service-card { display: block !important; opacity: 1 !important; visibility: visible !important; transform: none !important; }
+      #services .card-visual { display: block !important; width: 100% !important; min-height: 380px !important; background: #f3eadc; }
+      #services .card-visual img { display: block !important; width: 100% !important; height: 100% !important; min-height: 380px !important; object-fit: cover !important; opacity: 1 !important; visibility: visible !important; }
+    }
+  </style></head>
 <body>
   <header class="nav" id="top">
     <a class="brand" href="#top" aria-label="Apna Flower Decoration home">
@@ -58,15 +65,15 @@
       </div>
       <div class="service-grid">
         <article class="service-card large">
-          <div class="card-visual"><img src="assets/wedding-stage.webp?v=4" alt="Luxury floral wedding stage and mandap decoration" loading="eager" decoding="async"><span class="card-index">01</span><span class="view-label">VIEW STYLE ↗</span></div>
+          <div class="card-visual"><img src="assets/wedding-stage-mobile.jpg?v=6" alt="Luxury floral wedding stage and mandap decoration" loading="eager" decoding="async"><span class="card-index">01</span><span class="view-label">VIEW STYLE ↗</span></div>
           <div class="card-copy"><h3>Wedding & Stage</h3><p>Complete wedding stage, mandap and gallery decoration designed for your big day.</p><span>SHAADI • STAGE • GALLERY</span></div>
         </article>
         <article class="service-card">
-          <div class="card-visual"><img src="assets/haldi-mehndi.webp?v=4" alt="Premium yellow marigold haldi and mehndi decoration" loading="eager" decoding="async"><span class="card-index">02</span><span class="view-label">VIEW STYLE ↗</span></div>
+          <div class="card-visual"><img src="assets/haldi-mehndi-mobile.jpg?v=6" alt="Premium yellow marigold haldi and mehndi decoration" loading="eager" decoding="async"><span class="card-index">02</span><span class="view-label">VIEW STYLE ↗</span></div>
           <div class="card-copy"><h3>Haldi & Mehndi</h3><p>Bright marigolds, playful colours and picture-perfect corners.</p><span>HALDI • MEHNDI</span></div>
         </article>
         <article class="service-card">
-          <div class="card-visual"><img src="assets/life-celebrations.webp?v=4" alt="Elegant floral arch for engagement and birthday celebrations" loading="eager" decoding="async"><span class="card-index">03</span><span class="view-label">VIEW STYLE ↗</span></div>
+          <div class="card-visual"><img src="assets/life-celebrations-mobile.jpg?v=6" alt="Elegant floral arch for engagement and birthday celebrations" loading="eager" decoding="async"><span class="card-index">03</span><span class="view-label">VIEW STYLE ↗</span></div>
           <div class="card-copy"><h3>Life’s Celebrations</h3><p>Warm, lively decor for birthdays, engagements and every happy occasion.</p><span>BIRTHDAY • ENGAGEMENT • MORE</span></div>
         </article>
       </div>
