@@ -168,4 +168,65 @@ body{font-family:"Inter",Arial,sans-serif;font-size:15px;line-height:1.6;-webkit
 .phone,.contact-card h3{font-family:"Playfair Display",Georgia,serif;font-weight:600}
 @media(max-width:850px){body{font-size:14px}.hero h1{font-size:clamp(48px,14vw,65px);line-height:1}.hero-copy{font-size:14px}.intro h2{font-size:38px;line-height:1.16}.section-heading h2{font-size:47px;line-height:1.05}.service-grid{grid-template-columns:1fr;gap:24px}.large .card-visual,.service-card:not(.large) .card-visual,.card-visual{height:420px;min-height:0}.card-copy{min-height:0}.promise h2{font-size:52px}.contact h2{font-size:56px}}
 /* Decoration gallery */
-.gallery{padding:clamp(90px,9vw,140px) clamp(24px,7vw,110px);background:#fffdf8}.gallery-heading{max-width:1280px;margin:0 auto 55px;display:flex;align-items:end;justify-content:space-between;gap:50px}.gallery-heading h2{margin:13px 0 0;font:500 clamp(48px,5.1vw,72px)/1.03 "Playfair Display",Georgia,serif;letter-spacing:-.035em}.gallery-heading h2 em{color:var(--terracotta);font-style:italic}.gallery-heading>p{max-width:390px;margin:0 0 8px;color:var(--muted);font-size:14px;line-height:1.8}.gallery-grid{max-width:1280px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:310px;gap:16px}.gallery-item{position:relative;margin:0;overflow:hidden;background:#eadfce}.gallery-featured{grid-row:span 2}.gallery-wide{grid-column:span 2}.gallery-item:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(22,30,25,.78));pointer-events:none}.gallery-item img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .7s ease}.gallery-item:hover img{transform:scale(1.04)}.gallery-item figcaption{position:absolute;z-index:2;left:24px;right:24px;bottom:21px;color:#fff}.gallery-item figcaption span{display:block;margin-bottom:7px;color:#f1c77f;font-size:8px;letter-spacing:.2em}.gallery-item figcaption strong{display:block;font:600 25px/1.1 "Playfair Display",Georgia,serif}.gallery-item figcaption small{display:block;margin-top:6px;font-size:7px;letter-spacing:.18em;text-transform:uppercase;opacity:.75}.gallery-credit{max-width:1280px;margin:18px auto 0;color:var(--muted);font-size:9px;text-align:right}.gallery-credit a{text-decoration:underline;text-underline-offset:3px}@media(max-width:850px){.gallery{padding:82px 18px}.gallery-heading{display:block;margin-bottom:38px}.gallery-heading h2{font-size:46px}.gallery-heading>p{margin-top:20px}.gallery-grid{grid-template-columns:1fr;grid-auto-rows:390px;gap:14px}.gallery-featured,.gallery-wide{grid-row:auto;grid-column:auto}.gallery-item{min-height:390px}.gallery-item img{height:100%!important;min-height:390px!important;opacity:1!important;visibility:visible!important}.gallery-credit{text-align:left;line-height:1.6}}
+.gallery{padding:clamp(90px,9vw,140px) clamp(24px,7vw,110px);background:#fffdf8}
+.gallery-heading{max-width:1280px;margin:0 auto 55px;display:flex;align-items:end;justify-content:space-between;gap:50px}
+.gallery-heading h2{margin:13px 0 0;font:500 clamp(48px,5.1vw,72px)/1.03 "Playfair Display",Georgia,serif;letter-spacing:-.035em}
+.gallery-heading h2 em{color:var(--terracotta);font-style:italic}
+.gallery-heading>p{max-width:390px;margin:0 0 8px;color:var(--muted);font-size:16px;line-height:1.8}
+
+.gallery-viewport{max-width:100%;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent);mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+.gallery-track{display:flex;width:max-content;gap:22px;animation:gallery-scroll 46s linear infinite}
+.gallery-track:hover{animation-play-state:paused}
+@keyframes gallery-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+.gallery-item{position:relative;flex:0 0 auto;width:360px;height:470px;margin:0;overflow:hidden;border-radius:4px;background:#eadfce}
+.gallery-item:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(22,30,25,.78));pointer-events:none}
+.gallery-item img{display:block;width:100%;height:100%;object-fit:cover}
+.gallery-item figcaption{position:absolute;z-index:2;left:24px;right:24px;bottom:21px;color:#fff}
+.gallery-item figcaption span{display:block;margin-bottom:7px;color:#f1c77f;font-size:11px;letter-spacing:.2em}
+.gallery-item figcaption strong{display:block;font:600 28px/1.1 "Playfair Display",Georgia,serif}
+.gallery-item figcaption small{display:block;margin-top:6px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;opacity:.85}
+
+.gallery-credit{max-width:1280px;margin:22px auto 0;color:var(--muted);font-size:12px;text-align:right}
+.gallery-credit a{text-decoration:underline;text-underline-offset:3px}
+
+@media(max-width:850px){
+  .gallery{padding:82px 18px}
+  .gallery-heading{display:block;margin-bottom:38px}
+  .gallery-heading h2{font-size:46px}
+  .gallery-heading>p{margin-top:20px;font-size:15px}
+  .gallery-item{width:80vw;height:60vw;min-height:340px;max-height:440px}
+  .gallery-track{gap:16px;animation-duration:30s}
+  .gallery-credit{text-align:left;line-height:1.6}
+}
+
+@media (prefers-reduced-motion: reduce){
+  .gallery-viewport{overflow-x:auto}
+  .gallery-track{animation:none;scroll-snap-type:x proximity}
+  .gallery-item{scroll-snap-align:start}
+}
+
+/* Legibility pass — larger, easier-to-read type across the site */
+body{font-size:16px;line-height:1.65}
+.nav nav{font-size:14px}
+.nav-call{font-size:13px}
+.eyebrow,.kicker,.section-number,.card-copy>span{font-size:12px}
+.hero-meta{font-size:12px}
+.hero-meta p{font-size:10px}
+.hero-copy{font-size:17px;line-height:1.8}
+.text-link,.button{font-size:13px}
+.intro-copy>p:last-child,.section-heading>p,.card-copy p,.contact-copy>p:not(.kicker){font-size:16px;line-height:1.85}
+.card-copy h3{font-size:31px}
+.card-index{font-size:10px}
+.view-label{font-size:9px}
+.promise-list span{font-size:22px}
+.promise-list strong{font-size:10px}
+footer{font-size:12px}
+
+@media (max-width:850px){
+  body{font-size:15.5px}
+  .hero-copy{font-size:16px}
+  .intro-copy>p:last-child,.section-heading>p,.card-copy p,.contact-copy>p:not(.kicker){font-size:15px}
+  .eyebrow,.kicker,.section-number,.card-copy>span{font-size:11px}
+  footer{font-size:11px}
+}
